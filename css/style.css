@@ -1,0 +1,188 @@
+/*清除默认格式*/
+*{
+		margin:0px;
+		padding:0px;
+		font-family:inherit;
+		font-size:inherit;
+	}
+
+html,body{
+	-webkit-text-size-adjust: none;
+}
+ 
+img{
+	outline: 0px;
+	border: 0px;
+}
+ul li
+		{
+			list-style: none;
+		}
+a
+{
+	text-decoration: none;
+}
+/*end*/
+
+
+/*body{
+	width: 1000px;
+	margin: 0px auto;
+	font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;
+	font-size:15px;
+	-webkit-text-size-adjust:none;
+   
+    -webkit-box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
+    -moz-box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
+    
+}*/
+	
+
+
+	
+
+	/*header样式*/
+
+	
+	
+	.labname
+	{
+		font-size: 35px;
+		position: absolute;
+		top: 40px;
+		left: 50px;
+	}
+	.nav
+	{
+		width: 900px;
+		height:50px;
+		padding: 10px;	
+		margin: 0 auto;
+		border-radius:15px;
+		-moz-border-radius:15px; /* Old Firefox */
+	}
+	.nav ul{
+		width: 800px;
+		margin: 0 auto;
+	}
+	
+	/*.nav a
+	{
+		font-size:20px;
+		text-align: center;
+		color:#fff;
+		background-color: gray;
+		float:left;
+		margin: 0 10px;
+	}*/
+	.nav a:hover
+	{
+		background-color: #A0522D;
+	}
+	
+	
+	/*mainbody样式*/
+	/*.picwall
+	{
+		width: 900px;
+		height:350px;
+		border:2px solid black;
+		margin: 10px auto;
+
+	}*/
+	.main{
+		width: 100%;
+		margin: 20px auto;
+		margin-bottom: 50px;
+
+	}
+	
+	.content{
+		width: 900px;
+		padding: 0 auto;
+		margin: 0 auto
+	}
+	
+	.content a:hover{
+		text-decoration:underline;
+	}
+	
+	.content1
+	{
+		margin: 5px;
+		height:440px;
+		width:400px;
+		/*background-color:rgb(223,223,223);*/
+		float:left;
+		padding: 20px;
+		border-radius:15px;
+		-moz-border-radius:15px; /* Old Firefox */
+	}
+	.content2
+	{
+		margin: 5px;
+		height:440px;
+		width:400px;
+		/*background-color:rgb(223,223,223);*/
+		float:right;
+		padding: 20px;
+		border-radius:15px;
+		-moz-border-radius:15px; /* Old Firefox */
+	}
+	.titleimg img{
+		width:400px;
+		height: 150px; 
+		margin: 10px;
+	}
+
+	.tl
+	{
+		color:#DC143C;
+		font-weight: bold;
+		font-size:25px;
+	}
+
+	
+	.list{
+		
+		float: left;
+		padding: 10px;
+		margin: 20px;
+		
+	}
+	.list li{
+		width: 430px;
+		height: 25px;
+		line-height: 25px;
+		margin-bottom: 6px;
+	}
+	.list li a{
+		color: #000;
+	}
+	.ntitle{
+		float: left;
+		
+	}
+	.ntime{
+		
+		float: right;
+		margin-right: 60px;
+	}
+	.clear{
+		clear:both;
+	}
+	.footer
+	{
+		height:90px;
+		/*background-color:rgb(105,105,105);*/
+		clear:both;
+		text-align: center;
+		padding: 10px;
+		margin-top: 25px;
+		border-top: 1px solid #DA70D6;
+	}
+	.highlight{
+		color: #00BFFF;
+	}
+

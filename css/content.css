@@ -1,0 +1,15 @@
+.ctitle{
+			font-size: 25px;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			
+		}
+.c-user{
+	float: right;
+	color: #FF6666
+}
+#main{
+	width: 90%;
+	padding: 20px;
+}
