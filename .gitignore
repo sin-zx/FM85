@@ -1,3 +1,8 @@
 *.mp4
 data/data.mdb
 *.gif
+*.png
+img/
+imgs/
+files/
+mp3

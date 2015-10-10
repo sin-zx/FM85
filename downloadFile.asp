@@ -9,7 +9,7 @@ FileExt = Mid(Filename, InStrRev(Filename, ".") + 1)
 
 Select Case UCase(FileExt)
 
-    Case "ASP", "ASA", "ASPX", "ASAX", "MDB","html"
+    Case "ASP", "ASA", "ASPX", "ASAX", "MDB","html","js","css"
 
         Response.Write "受保护文件,无法下载."
         Response.End

@@ -83,7 +83,6 @@
               </div>
             </div>
                      </div>  -->
-“深大睿言奖”第二届荔园建设方案评选大赛——银镜奖
 
 <div class="container-fluid">       
   <div class="row-fluid">  

@@ -8,7 +8,7 @@
     <meta name="description" content="深圳大学广播电台 FM85.0">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    
+  
     <!-- Video Player -->
     <link href="css/video-js.css" rel="stylesheet">
     <script src="js/video.js"></script>
@@ -19,7 +19,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/cover2.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -45,8 +45,8 @@
               <h3 class="masthead-brand">FM85.0</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">首页</a></li>
-                  <li><a href="#">节目列表</a></li>
+                  <li><a href="#">首页</a></li>
+                  <li class="active"><a href="#">节目列表</a></li>
                   <li><a href="#">点点传情</a></li>
                   <li><a href="#">电台君们</a></li>
                 </ul>
@@ -55,7 +55,8 @@
           </div>
           
 
-          <div class="inner cover">
+          <div class="inner cover2">
+            <!-- 
             <h1 class="cover-heading">FM85.0</h1>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages.
              Download, edit the text, and add your own fullscreen 
@@ -65,7 +66,9 @@
              background photo to make it your own.</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default">我要点歌</a>
-            </p>
+            </p> 
+            -->
+            <h2>您现在收听的是 深圳大学广播电台</h2>
           </div>
           <hr/>
 
@@ -83,75 +86,56 @@
               </div>
             </div>
                      </div>  -->
-“深大睿言奖”第二届荔园建设方案评选大赛——银镜奖
 
 <div class="container-fluid">       
   <div class="row-fluid">  
-    <div class="showlist">
-      <h3>
-        每日节目 <img src="img/headset.png" alt="">
-      </h3>
-      <br>
-      <ul>
-        <li>
-          <a href="">新闻资讯tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">体育竞技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">娱乐八卦tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">前沿科技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">环球财经tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-      </ul>
-      <div class="more_click"><a href="">更多</a> | <a href="">下载</a></div>
+    <!-- 播放窗口 -->
+    <div class="playblock">
+      <h1>20151011 第11期 荔园大事件</h1>
+      <p>播主：赵赵</p>
+      <audio controls="controls">
+        <source src="mp3/test.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <h3> <a href="">【点此下载】</a></h3>
+    </div>
+    <!-- 节目列表 -->
+    <div class="playlist">
+      <h2>往期节目</h2>
+      <ol class="list-unstyled">
+        <li><a href="">20151011  A description list is perfect for defining terms.</a></li>
+        <li><a href="">20151011  A description list is perfect for defining terms.</a></li>
+        <li><a href="">20151011  A description list is perfect for defining terms.</a></li>
+        <li><a href="">20151011  A description list is perfect for defining terms.</a></li>
+        <li><a href="">20151011  A description list is perfect for defining terms.</a></li>
+      </ol>
+
+      <!-- 分页start -->
+      <nav>
+        <ul class="pagination pagination-sm">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 分页end -->
     </div>
   </div>
 </div>   
 
-<hr>
 
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="showlist">
-      <h3>
-        荔园观点 <img src="img/video.png" alt="">
-      </h3>
-      
-      <br>
-      <div class="show_video">
-        <video width="70%" controls>
-          <source src="files/test.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-      <br><br><br>
-      <ul class="unstyled">
-        <li>
-          <a href="">新闻资讯tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">体育竞技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">娱乐八卦tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">前沿科技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">环球财经tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-      </ul>
-      <div class="more_click"><a href="">更多</a> | <a href="">下载</a></div>
-    </div>
-    <br>
-  </div>    
 
 
      <!-- 页脚 -->
