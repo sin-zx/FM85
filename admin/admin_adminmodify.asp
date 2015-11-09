@@ -1,4 +1,4 @@
-<!--#include file="adminconn.inc" -->
+ï»¿<!--#include file="adminconn.inc" -->
 <%
   if session("aleave")="" then
       response.redirect "adminlogin.asp"
@@ -6,7 +6,7 @@
   end if
 %>
 <%if session("aleave")="check" then
-response.write"<SCRIPT language=JavaScript>alert('¶Ô²»Æğ£¬ÄãÃ»ÓĞÕâ¸öÈ¨ÏŞ£¡');"
+response.write"<SCRIPT language=JavaScript>alert('å¯¹ä¸èµ·ï¼Œä½ æ²¡æœ‰è¿™ä¸ªæƒé™ï¼');"
 response.write"javascript:history.go(-1)</SCRIPT>"
 response.end
 end if%>
@@ -16,46 +16,51 @@ set rs=server.createobject("adodb.recordset")
 sql="select * from admin where id="&id
 rs.open sql,conn,1,1
 if rs.eof then
-response.write"<SCRIPT language=JavaScript>alert('·şÎñÆ÷³ö´í£¬ÇëÁªÏµ¹ÜÀíÔ±£¡');"
+response.write"<SCRIPT language=JavaScript>alert('æœåŠ¡å™¨å‡ºé”™ï¼Œè¯·è”ç³»ç®¡ç†å‘˜ï¼');"
 response.write"javascript:history.go(-1)</SCRIPT>"
 else
 admin=rs("admin")
 password=rs("password")
 aleave=rs("aleave")
 %>
-
-<META http-equiv="Content-Type content=text/html; charset=utf-8">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
 <table width="90%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#000000">
   <form method="POST" action="admin_adminSave.asp?id=<%=id%>">
           
     <tr bgcolor="#CCCCCC"> 
-      <td width="100%" height="24" colspan=2 align=center><b>ĞŞ ¸Ä ¹Ü Àí Ô± ×Ê ÁÏ</b></td>
+      <td width="100%" height="24" colspan=2 align=center><b>ä¿® æ”¹ ç®¡ ç† å‘˜ èµ„ æ–™</b></td>
 </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td width="30%" height="22" align="right">ÓÃ»§Ãû£º</td>
+      <td width="30%" height="22" align="right">ç”¨æˆ·åï¼š</td>
       <td width="70%"> 
         <input type="text" name="admin" value="<%=admin%>" size="20" class="input"></td>
 </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td width="30%" height="22" align="right">ÃÜÂë£º</td>
+      <td width="30%" height="22" align="right">å¯†ç ï¼š</td>
       <td width="70%"> 
         <input type="text" name="password" value="<%=decrypt(rs("password"))%>" size="20" class="input"></td>
 </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td width="30%" height="22" align="right">È¨ÏŞ£º</td>
+      <td width="30%" height="22" align="right">æƒé™ï¼š</td>
       <td width="70%" height="22"> 
         <select name="aleave" style="font-size:9pt" class="input">
-<option value=super<%if aleave="super" then%> selected<%end if%>>³¬¼¶¹ÜÀíÔ±</option>
-<option value=check<%if aleave="check" then%> selected<%end if%>>ÆÕÍ¨¹ÜÀíÔ±</option>
+<option value=super<%if aleave="super" then%> selected<%end if%>>è¶…çº§ç®¡ç†å‘˜</option>
+<option value=check<%if aleave="check" then%> selected<%end if%>>æ™®é€šç®¡ç†å‘˜</option>
 </select>
 </td>
 </tr>
     <tr align="center" bgcolor="#FFFFFF" height="24"> 
       <td height="30" colspan=2> 
         <input type="hidden" value="edit" name="act">
-<input name="cmdok" type="submit" id="cmdok" value=" ĞŞ ¸Ä " class="input">
+<input name="cmdok" type="submit" id="cmdok" value=" ä¿® æ”¹ " class="input">
         &nbsp;
-<input name="cmdcance" type="reset" id="cmdcance" value=" Çå ³ı " class="input">
+<input name="cmdcance" type="reset" id="cmdcance" value=" æ¸… é™¤ " class="input">
 </td>
 </tr>
 </form>

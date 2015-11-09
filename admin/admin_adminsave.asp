@@ -1,4 +1,4 @@
-<!--#include file="adminconn.inc" -->
+ï»¿<!--#include file="adminconn.inc" -->
 <%
   if session("aleave")="" then
       response.redirect "adminlogin.asp"
@@ -6,7 +6,7 @@
   end if
 %>
 <%if session("aleave")="check" then
-response.write"<SCRIPT language=JavaScript>alert('¶Ô²»Æğ£¬ÄãÃ»ÓĞÕâ¸öÈ¨ÏŞ£¡');"
+response.write"<SCRIPT language=JavaScript>alert('æ™®é€šç®¡ç†å‘˜æ— æƒé™ï¼');"
 response.write"javascript:history.go(-1)</SCRIPT>"
 response.end
 end if%>
@@ -15,7 +15,7 @@ admin=request.form("admin")
 password=request.form("password")
 aleave=request.form("aleave")
 if admin="" or password="" then
-response.write"<SCRIPT language=JavaScript>alert('¹ÜÀíÔ±Ãû³ÆºÍÃÜÂë¶¼²»ÄÜÎª¿Õ£¡');"
+response.write"<SCRIPT language=JavaScript>alert('è¯·å¡«å†™è´¦å·æˆ–å¯†ç ');"
 response.write"javascript:history.go(-1)</SCRIPT>"
 Response.End
 end if
@@ -23,27 +23,27 @@ end if
 set rs=server.CreateObject("ADODB.RecordSet")
 
 if request("act")="edit" and request.QueryString("id")<>"" then
-id=request("id")
-sql="select * from admin where id="& request.QueryString("id")
-rs.open sql,conn,3,2
-if not rs.eof then
-rs("aleave")=aleave
-rs("admin")=admin
-rs("password")=encrypt(password)
-rs.update
-end if
-rs.close
+	id=request("id")
+	sql="select * from admin where id="& request.QueryString("id")
+	rs.open sql,conn,3,2
+	if not rs.eof then
+		rs("aleave")=aleave
+		rs("admin")=admin
+		rs("password")=encrypt(password)
+		rs.update
+	end if
+	rs.close
 elseif request("act")="add" then
-sql="select * from admin where admin='"&admin&"'"
-rs.open sql,conn,3,2
-if (rs.eof and rs.bof) then
-rs.addnew
-rs("aleave")=aleave
-rs("admin")=admin
-rs("password")=encrypt(password)
-rs.update
-end if
-rs.close
+	sql="select * from admin where admin='"&admin&"'"
+	rs.open sql,conn,3,2
+	if (rs.eof and rs.bof) then
+		rs.addnew
+		rs("aleave")=aleave
+		rs("admin")=admin
+		rs("password")=encrypt(password)
+		rs.update
+	end if
+	rs.close
 end if
 set rs=nothing
 conn.close

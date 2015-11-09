@@ -1,180 +1,175 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="深圳大学广播电台 FM85.0">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    
-    <!-- Video Player -->
-    <link href="css/video-js.css" rel="stylesheet">
-    <script src="js/video.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="imgs/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<title>FM850</title>
+<script>
+	$(document).ready(function(){
+	  $("#btnLogin").click(function(){
+	    
+	    $("#errmsg").text("wrong");
+	    $("#loginDone").hide();
+	  });
+  
+});
+</script>
+</head>
 
-    <title>深大电台</title>
+<body>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<div class="header">	<!--头部（渐变色）-->
+	<nav class="navbar">
+	  <div class="container-fluid">
+	    <!-- 导航栏 -->
+	    <div class="navbar-header">
+	    <!-- 折叠菜单 -->
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="">FM85.0</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+			<li><a href="showlist.html">节目列表</a></li>
+			<li><a href="order.html">点点传情</a></li>
+			<li><a href="aboutUs.html">电台君们</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</div>
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+<!-- 图片轮播 -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">FM85.0</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">首页</a></li>
-                  <li><a href="#">节目列表</a></li>
-                  <li><a href="#">点点传情</a></li>
-                  <li><a href="#">电台君们</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          
-
-          <div class="inner cover">
-            <h1 class="cover-heading">FM85.0</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages.
-             Download, edit the text, and add your own fullscreen 
-             background photo to make it your own.</p>
-             <p class="lead">Cover is a one-page template for building simple and beautiful home pages.
-             Download, edit the text, and add your own fullscreen 
-             background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">我要点歌</a>
-            </p>
-          </div>
-          <hr/>
-
-          
-           <!-- <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/t1.jpg" alt="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>推广部部长</p>
-                  <p>啦啦啦我是卖报的小行家</p>
-                  <p><a href="#" class="btn btn-primary" role="button">看TA资料</a> </p>
-                </div>
-              </div>
-            </div>
-                     </div>  -->
-“深大睿言奖”第二届荔园建设方案评选大赛——银镜奖
-
-<div class="container-fluid">       
-  <div class="row-fluid">  
-    <div class="showlist">
-      <h3>
-        每日节目 <img src="img/headset.png" alt="">
-      </h3>
-      <br>
-      <ul>
-        <li>
-          <a href="">新闻资讯tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">体育竞技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">娱乐八卦tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">前沿科技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">环球财经tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-      </ul>
-      <div class="more_click"><a href="">更多</a> | <a href="">下载</a></div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="imgs/bg1.jpg" alt="...">
+      <div class="carousel-caption">
+        <h2>图片介绍</h2>
+        <p>write something here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="imgs/bg2.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="imgs/bg3.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
     </div>
   </div>
-</div>   
 
-<hr>
-
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="intro">
+		<h2 class="titleword">您现在收听的是 FM85.0 深圳大学广播电台</h2>
+		<a href="order.html" class="btn btn-lg btn-success">我要点歌</a>
+</div>
 <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="showlist">
-      <h3>
-        荔园观点 <img src="img/video.png" alt="">
-      </h3>
-      
-      <br>
-      <div class="show_video">
-        <video width="70%" controls>
-          <source src="files/test.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-      <br><br><br>
-      <ul class="unstyled">
-        <li>
-          <a href="">新闻资讯tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">体育竞技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">娱乐八卦tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">前沿科技tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-        <li>
-          <a href="">环球财经tuyoyo获得诺贝尔生物医学奖，是中国首位获得科技类诺奖的女科学家</a>
-        </li>
-      </ul>
-      <div class="more_click"><a href="">更多</a> | <a href="">下载</a></div>
-    </div>
-    <br>
-  </div>    
+	<div class="row-fluid">
+		<div class="row">
+		  <div class="col-md-8">
+		  	<h2 class='sub_title'>近期节目</h2>
+			<hr>
+			<div class="main">
+				<ul class="list">
+			        <li>
+			          <a href="" class="tit">20151108 六年一班巴拉巴拉巴拉</a>
+			          <div class="operateBtn">
+			            <button type="button" class="btn btn-success">在线收听</button>
+			            <button type="button" class="btn btn-info">下载</button>
+			          </div>
+			        </li>
+			        <li>
+			          <a href="" class="tit">20151108 六年一班巴拉巴拉巴拉</a>
+			          <div class="operateBtn">
+			            <button type="button" class="btn btn-success">在线收听</button>
+			            <button type="button" class="btn btn-info">下载</button>
+			          </div>
+			        </li>
+			        <li>
+			          <a href="" class="tit">20151108 六年一班巴拉巴拉巴拉</a>
+			          <div class="operateBtn">
+			            <button type="button" class="btn btn-success">在线收听</button>
+			            <button type="button" class="btn btn-info">下载</button>
+			          </div>
+			        </li>
+			      </ul>
+			      <a href="showlist.html" class="more">往期节目</a>  
+			      <div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<h2 class='sub_title'>公告栏</h2>
+				<hr>
+				<div class="main"></div>
+			</div>
+
+		  
 
 
-     <!-- 页脚 -->
-    <div class="mastfoot">
-      <div class="inner">
-        <p>©2015 深圳大学广播电台 | by zx.</p>
-      </div>
-    </div>
-
-  </div>
-
+		</div>				
+	</div>
+</div>
+<div class="foot">
+	<footer>
+        <p>©2015 深圳大学广播电台 | by zx</p>
+    </footer>
 </div>
 
-</div>
+	
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-
-  </body>
+</body>
 </html>
+
+
+
+<!-- Modal联系方式模态框 -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">联系我们</h4>
+      </div>
+      <div class="modal-body">
+		<h1>联系方式</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end -->

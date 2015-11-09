@@ -1,188 +1,157 @@
-/*清除默认格式*/
-*{
-		margin:0px;
-		padding:0px;
-		font-family:inherit;
-		font-size:inherit;
-	}
+body{
+    font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.titleword{
+    color:#6f9c92;
+}
+.nav li{
+    font-size: 18px;
+}
+.navbar a{
+    color:#362e2b;
+}
+.sub_title{
+    color:#6f9c92;
+    text-align: center;
+}
+.nav .active{
+    background-color: #6f9c92;
+}
+.nav .active a{
+    color:#fff;
+}
 
-html,body{
-	-webkit-text-size-adjust: none;
+/*内容容器 圆角边框 单独背景色*/
+.main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #e7eeed;
+    /*border:1px solid #6f9c92;*/
+    border-radius:25px; /*圆角*/
+    -moz-border-radius:25px;    
+    opacity:0.7;        /*背景透明度为*/
+    filter:alpha(Opacity=70);   /*适用老版本浏览器*/
 }
- 
-img{
-	outline: 0px;
-	border: 0px;
+.more{
+    clear: both;
+    display: block;
+    /*color: #fff;*/
+    /*background-color: #6f9c92;*/
+    margin-right: 20px;
+    float: right;
+    margin-top: 20px;
+    font-size: 20px;
 }
-ul li
-		{
-			list-style: none;
-		}
-a
-{
-	text-decoration: none;
+/*end*/
+/*有logo的banner*/
+.logo_area{
+    width: 100%;
+    min-height: 350px;
+    background-color: #e7eeed;
+    padding: 20px;
+}
+.logo_area img{
+    display: block;
+    width: 220px;
+    /*height: 300px;*/
+    margin: 0 auto;
 }
 /*end*/
 
+/*图片轮播*/
+.carousel{
+    min-height:330px; 
+    text-align: center;
 
-/*body{
-	width: 1000px;
-	margin: 0px auto;
-	font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;
-	font-size:15px;
-	-webkit-text-size-adjust:none;
-   
-    -webkit-box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
-    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
-    -moz-box-shadow:0px 0px 10px 1px rgba(0, 0, 0, .8);
-    
-}*/
-	
+}
+.carousel .item{
+    height: 330px !important;
+    margin: 0 auto;
+
+}
+
+.clear{
+    clear:both;
+}
 
 
-	
+.navbar-nav a:hover{  
+     background-color: #6f9c92 !important; 
+} 
 
-	/*header样式*/
+/*人物名片*/
+.memberCard{
+    text-align: center;
+}
+.memberCard p{
+    font-weight: bold;
+    font-size: 17px;
+}
+.divider{   /*分割线*/
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #6f9c92;
+}
 
-	
-	
-	.labname
-	{
-		font-size: 35px;
-		position: absolute;
-		top: 40px;
-		left: 50px;
-	}
-	.nav
-	{
-		width: 900px;
-		height:50px;
-		padding: 10px;	
-		margin: 0 auto;
-		border-radius:15px;
-		-moz-border-radius:15px; /* Old Firefox */
-	}
-	.nav ul{
-		width: 800px;
-		margin: 0 auto;
-	}
-	
-	/*.nav a
-	{
-		font-size:20px;
-		text-align: center;
-		color:#fff;
-		background-color: gray;
-		float:left;
-		margin: 0 10px;
-	}*/
-	.nav a:hover
-	{
-		background-color: #A0522D;
-	}
-	
-	
-	/*mainbody样式*/
-	/*.picwall
-	{
-		width: 900px;
-		height:350px;
-		border:2px solid black;
-		margin: 10px auto;
+.order{
+    min-height:600px; 
+}
+.order a{
+    display: block;
+    width: 120px;
+    margin: 0 auto; 
+}
+.list{
+    text-align: center;
+    list-style: none;
+    line-height: 45px;
+    font-size: 20px;
+}
+.list a{
+    text-decoration: none;
+    color: #6f9c92;
+}
+.list .tit{
+    display: block;
+    clear: right;
+    float: left;
+    font-size: 20px !important;
+}
+.list .operateBtn{
+    /*clear: right;*/
+    float: right;
+}
 
-	}*/
-	.main{
-		width: 100%;
-		margin: 20px auto;
-		margin-bottom: 50px;
 
-	}
-	
-	.content{
-		width: 900px;
-		padding: 0 auto;
-		margin: 0 auto
-	}
-	
-	.content a:hover{
-		text-decoration:underline;
-	}
-	
-	.content1
-	{
-		margin: 5px;
-		height:440px;
-		width:400px;
-		/*background-color:rgb(223,223,223);*/
-		float:left;
-		padding: 20px;
-		border-radius:15px;
-		-moz-border-radius:15px; /* Old Firefox */
-	}
-	.content2
-	{
-		margin: 5px;
-		height:440px;
-		width:400px;
-		/*background-color:rgb(223,223,223);*/
-		float:right;
-		padding: 20px;
-		border-radius:15px;
-		-moz-border-radius:15px; /* Old Firefox */
-	}
-	.titleimg img{
-		width:400px;
-		height: 150px; 
-		margin: 10px;
-	}
 
-	.tl
-	{
-		color:#DC143C;
-		font-weight: bold;
-		font-size:25px;
-	}
+footer{
+	width: 250px;
+	margin: 20px auto;
+	font-size: 15px;
+}
+.intro{
+	margin: 40px 0;
+	text-align: center;
+	line-height: 80px;
+    /*min-height: 150px;*/
+}
+.header{	/*头部 渐变色背景*/
+	color: #fff;
+	padding: 10px;
+    width: 100%;
+    /*min-height: 350px;*/
+    /* background: #32d1ac;
+    background: -moz-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #32d1ac), color-stop(100%, #4a90e2));
+    background: -webkit-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
+    background: -o-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
+    background: -ms-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
+    background: linear-gradient(135deg, #32d1ac 0%, #4a90e2 100%); */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32d1ac', endColorstr='#4a90e2', GradientType=1);*/
+}
 
-	
-	.list{
-		
-		float: left;
-		padding: 10px;
-		margin: 20px;
-		
-	}
-	.list li{
-		width: 430px;
-		height: 25px;
-		line-height: 25px;
-		margin-bottom: 6px;
-	}
-	.list li a{
-		color: #000;
-	}
-	.ntitle{
-		float: left;
-		
-	}
-	.ntime{
-		
-		float: right;
-		margin-right: 60px;
-	}
-	.clear{
-		clear:both;
-	}
-	.footer
-	{
-		height:90px;
-		/*background-color:rgb(105,105,105);*/
-		clear:both;
-		text-align: center;
-		padding: 10px;
-		margin-top: 25px;
-		border-top: 1px solid #DA70D6;
-	}
-	.highlight{
-		color: #00BFFF;
-	}
 

@@ -53,10 +53,12 @@ set rs=nothing
 %>
       </table> 
       <br>
+
 <table width="300" border="0" align="center" cellpadding="4" cellspacing="1" bgcolor="#C6C6C6">
         <tr bgcolor="#CCCCCC"> 
           <td colspan="2">添加管理员：</td> 
         </tr>
+<!-- 添加管理员表单 -->
         <form name="add" method="post" action="admin_adminsave.asp">
           <tr bgcolor="#FFFFFF"> 
             <td align="right" height="22">管理帐号：</td>
@@ -67,11 +69,11 @@ set rs=nothing
             <td align="right">管理权限：</td> 
             <td> 
               <select name="aleave" class="input">
-<option value=super selected>超级管理员</option> 
-<option value=check>普通管理员</option>  
-</select>
-</td>
-</tr>
+                <option value=super selected>超级管理员</option> 
+                <option value=check>普通管理员</option>  
+              </select>
+            </td>
+          </tr>
           <tr bgcolor="#FFFFFF"> 
             <td align="right" height="22">管理密码：</td>
             <td> 

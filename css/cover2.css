@@ -63,27 +63,20 @@ body {
   text-align: center;
 }
 
-
-.playblock{
-  border-right: 1px solid  #A9A9A9;
-  width: 40%;
-  float: left;
+.shows{
+  width: 80%;
   padding: 20px;
-  margin: 10px;
+  margin: 10px auto;
+
 }
+
 .playblock p{
   font-size: 25px;
 }
 .playblock audio{
   width:95%;
 }
-.playlist{
-  
-  width: 50%;
-  float: left;
-  padding: 20px;
-  margin: 10px;
-}
+
 /* nav{
   
   width: 50%;
@@ -175,6 +168,7 @@ body {
 }
 
 
+
 /*
  * Affix and center
  */
@@ -209,6 +203,16 @@ body {
   .cover-container {
     width: 950px;
   }
+
+.playblock{
+  border-right: 1px solid  #A9A9A9;
+  width: 40%;
+  float: left;
+}
+.playlist{
+  width: 50%;
+  float: left;
+}
   /* .showlist{
   width: 46%;
   float: left;
