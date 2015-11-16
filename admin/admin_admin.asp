@@ -7,7 +7,7 @@
 %>
 <html>
 <head>
-<title>风诺网络新闻发布管理系统</title>
+<title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="../css.css" type="text/css">
 </head>
@@ -77,7 +77,7 @@ set rs=nothing
           <tr bgcolor="#FFFFFF"> 
             <td align="right" height="22">管理密码：</td>
             <td> 
-              <input type="password" name="password" class="form"> </td>
+              <input type="password" name="password"> </td>
           </tr>
           <tr bgcolor="#CCCCCC"> 
             <td colspan="2" align="center"> 

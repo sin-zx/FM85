@@ -5,5 +5,3 @@
 	Set conn=Server.CreateObject("ADODB.CONNECTION")
 	conn.open connstr
 %>
-
-

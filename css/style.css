@@ -3,6 +3,11 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.icon-bar{      /*改变折叠菜单按钮的颜色*/
+    background-color: #6f9c92;
+}
+
 .titleword{
     color:#6f9c92;
 }
@@ -16,6 +21,10 @@ body{
     color:#6f9c92;
     text-align: center;
 }
+.sub_title_white{
+    color:#fff;
+    text-align: center;
+}
 .nav .active{
     background-color: #6f9c92;
 }
@@ -27,13 +36,16 @@ body{
 .main{
     width: 80%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 35px;
     background-color: #e7eeed;
     /*border:1px solid #6f9c92;*/
     border-radius:25px; /*圆角*/
     -moz-border-radius:25px;    
     opacity:0.7;        /*背景透明度为*/
     filter:alpha(Opacity=70);   /*适用老版本浏览器*/
+}
+.main_list{
+    width: 50%;
 }
 .more{
     clear: both;
@@ -72,7 +84,12 @@ body{
     margin: 0 auto;
 
 }
-
+.line{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    clear: both;
+}
 .clear{
     clear:both;
 }
@@ -109,17 +126,17 @@ body{
     text-align: center;
     list-style: none;
     line-height: 45px;
-    font-size: 20px;
 }
 .list a{
     text-decoration: none;
     color: #6f9c92;
+    font-size: 20px !important;
 }
 .list .tit{
     display: block;
     clear: right;
     float: left;
-    font-size: 20px !important;
+    
 }
 .list .operateBtn{
     /*clear: right;*/
@@ -129,9 +146,11 @@ body{
 
 
 footer{
+    clear:both;
 	width: 250px;
-	margin: 20px auto;
+	margin: 60px auto;
 	font-size: 15px;
+    color: #6f9c92;
 }
 .intro{
 	margin: 40px 0;
@@ -154,4 +173,9 @@ footer{
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32d1ac', endColorstr='#4a90e2', GradientType=1);*/
 }
 
-
+#addFail{
+    color:#B22222;
+}
+#addSuccess{
+    color: #48D1CC;
+}

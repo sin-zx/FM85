@@ -8,26 +8,31 @@
 %>
 <%
 if request("no")="modi" then
-newsid=request.form("newsid")
+programid=request.form("id")
 
 title=request.form("title")
 classD=request.form("class")
-user=request.form("user")
+filename=request.form("filename")
+url=request.form("url")
 
 mContent = trim(Request.form("content")) 
   mContent = Replace(mContent,"<script","<sscript") 
   mContent = Replace(mContent,"/script>","/scripts>")
-  mContent = Replace(mContent,"/script >","/scripts>")
+mContent = Replace(mContent,"/script >","/scripts>")
 
-
+user=request.form("user")
 
 set rs=server.createobject("adodb.recordset")
-sql="select * from NEWS where id="&newsid
+sql="select * from programs where id="&programid
 rs.open sql,conn,1,3
+
 rs("title")=title
 rs("content")=mcontent
-rs("user")=user
+rs("user")=user 
 rs("class")=classD
+rs("filename")=filename
+rs("url")=url
+
 rs.update
 rs.close
 set rs=nothing
@@ -37,91 +42,95 @@ set conn=nothing
 
 response.write "<script language='javascript'>" & chr(13)
 		response.write "alert('修改成功！');" & Chr(13)
-		response.write "window.document.location.href='admin_info.asp';"&Chr(13)
+		response.write "window.document.location.href='admin_program.asp';"&Chr(13)
 		response.write "</script>" & Chr(13)
 Response.End
 end if
 %>
 
 
-<!doctype html>
+
+<script language = "JavaScript">
+function CheckForm()
+{
+	if (document.addProgram.title.value.length == 0) {
+		alert("标题不能为空.");
+		document.addProgram.title.focus();
+		return false;
+	}
+		if (document.addProgram.user.value.length == 0) {
+		alert("作者不能为空");
+		document.addProgram.user.focus();
+		return false;
+	}
+	return true;
+}
+</script>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../css/form.css">
     <link href="umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="umeditor/third-party/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="umeditor/umeditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="umeditor/umeditor.min.js"></script>
 <title>修改</title>
-
-<script language = "JavaScript"> 
-function CheckForm()
-{
-  if (document.addNEWS.title.value.length == 0) {
-    alert("标题不能为空.");
-    document.addNEWS.title.focus();
-    return false;
-  }
-    if (document.addNEWS.user.value.length == 0) {
-    alert("作者不能为空");
-    document.addNEWS.user.focus();
-    return false;
-  }
-  return true;
-}
-</script>
-
 </head>
 
 <body leftmargin="0" topmargin="0" bgcolor="#F7F7F7">
 <% 
-newsid=request("id")
+id=request("id")
 Set rso=Server.CreateObject("ADODB.RecordSet") 
-sql="select * from NEWS where  id="&newsid
+sql="select * from programs where  id="&id
 rso.Open sql,conn,1,1
 if rso.eof and rso.bof then
-response.Write("文章查找失败")
+response.Write("查找失败")
 else
 %>
-  <form name="addNEWS" method="post" action="admin_infomodi.asp?no=modi" class="basic-grey" onSubmit="return CheckForm();" >
-    <label>
+<form name="addProgram" method="post" action="admin_programModi.asp?no=modi" class="basic-grey" onSubmit="return CheckForm();" >
+  <label>
   <span>标题：</span>
   <input name="title" type="text" class="input" size="30" value="<%=rso("title")%>">
   </label>
-
   <label>
-    <span>资讯类型：</span>
+  <span>文件名（含后缀）：</span>
+  <input name="filename" type="text" class="input" size="30" value="<%=rso("filename")%>">
+  </label>
+  <label>
+  <span>在线链接：</span>
+  <input name="url" type="text" class="input" size="30" value="<%=rso("url")%>">
+  </label>
+  <label>
+  <span>节目类型：</span>
     <select name="class" id="">
-      <option value="电台新闻" selected>电台新闻</option>
-      <option value="校园资讯">校园资讯</option>
-      <option value="其他">其他</option>
+      <option value="mp3" selected>每日节目</option>
+      <option value="video">荔园观点</option>
     </select>
   </label>
+  <label>
+    <span>节目介绍：</span><br/><br/><br/>
+            <!--<textarea name="content">在这里输入内容</textarea>-->
+    <!-- 加载编辑器的容器 -->
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <!--编辑器在这里-->
+    <script id="container" name="content" type="text/plain" style="width:450px;height:230px;"><%=rso("content")%></script>
+  </label>
+  <br/><br/>
+  <label>
+    <span>发布者：</span>
+    <input name="user" type="text" value="<%=rso("user")%>">
+  </label>
+  <br/>
+  <label>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <input name="id" type="text" value=<%=id %> hidden>
 
-      <label>
-        <span>新闻内容：</span><br/><br/><br/>
-                <!--<textarea name="content">在这里输入内容</textarea>-->
-        <!-- 加载编辑器的容器 -->
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <!--编辑器在这里-->
-        <script id="container" name="content" type="text/plain" style="width:450px;height:230px;"><%=rso("content")%></script>
-      </label>
-      <br/><br/>
-      <label>
-        <span>发布者：</span>
-        <input name="user" type="text" value=<%=rso("user")%>>
-      </label>
-      <br/>
-      <label>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <input name="newsid" type="text" value=<%=newsid%> hidden>
-        <input type="submit" class="button" value="SEND" />
-        <input type="reset" class="button" name="Submit2" value="RESET" > 
-      </label>
-  </form>
+    <input type="submit" class="button" value="SEND" />
+    <input type="reset" class="button" name="Submit2" value="RESET" > 
+  </label>
+</form>
 
 <% End If
 rso.close

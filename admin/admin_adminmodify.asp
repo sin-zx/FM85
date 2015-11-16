@@ -1,4 +1,5 @@
 ﻿<!--#include file="adminconn.inc" -->
+<!--#include file="encrypt.asp" -->
 <%
   if session("aleave")="" then
       response.redirect "adminlogin.asp"

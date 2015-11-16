@@ -8,13 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>管理新闻</title>
+<title>点歌管理</title>
 </head>
 
 <body >
   <br>
-  <h3>&nbsp;&nbsp;<a href="admin_infoAdd.asp">添加资讯</a></h3>
-<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td>&nbsp;</td>
   </tr>
@@ -22,16 +21,20 @@
 <table width="95%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#C6C6C6">
   <tr> 
     <td width="5%" height="25" align="center" bgcolor="#CCCCCC">ID</td>
-    <td width="30%" align="center" bgcolor="#CCCCCC">新闻标题</td>
-    <td width="15%" align="center" bgcolor="#CCCCCC">发布者</td>
-    <td width="15%" align="center" bgcolor="#CCCCCC">分类</td>
-    <td width="20%" align="center" bgcolor="#CCCCCC">发布日期</td>
-    <td width="15%" align="center" bgcolor="#CCCCCC">操作</td>
+    <td width="7%" align="center" bgcolor="#CCCCCC">点歌的人</td>
+    <td width="7%" align="center" bgcolor="#CCCCCC">送给谁</td>
+    <td width="10%" align="center" bgcolor="#CCCCCC">歌曲</td>
+    <td width="30%" align="center" bgcolor="#CCCCCC">寄语</td>
+    <td width="10%" align="center" bgcolor="#CCCCCC">本人学院年级</td>
+    <td width="10%" align="center" bgcolor="#CCCCCC">对方学院年级</td>
+    <td width="5%" align="center" bgcolor="#CCCCCC">日期</td>
+    <td width="6%" align="center" bgcolor="#CCCCCC">状态</td>
+    <td width="10%" align="center" bgcolor="#CCCCCC">操作</td>
   </tr>
   <%
 page=clng(request("page"))
 Set rs=Server.CreateObject("ADODB.RecordSet") 
-sql="select * from NEWS order by id desc"
+sql="select * from orders order by id desc"
 rs.Open sql,conn,1,1
 if rs.eof and rs.bof then
 response.Write("<h2>没有记录</h2>")
@@ -43,15 +46,24 @@ if page > pages then page=pages
 rs.AbsolutePage=page  
 
 for j=1 to rs.PageSize 
+
+if rs("checked")=0 then
+  stat="未点出"
+else
+  stat="已点出"
+end if
 %>
   <tr bgcolor="#FFFFFF"> 
     <td height="22" align="center"><%=rs("id")%></td>
-    <td>　
-      <a href="../news_detail.asp?id=<%=rs("id")%>" target="_blank" title="<%=rs("title")%>"><%=left(rs("title"),28)%></a></td>
-    <td align="center"><%=left(rs("user"),5)%></td>
-    <td align="center"><%=rs("class")%> </td>
+    <td align="center"><%=rs("fromWho")%> </td>
+    <td align="center"><%=rs("toWho")%> </td>
+    <td align="center"><%=rs("songname")%> </td>
+    <td align="center"><%=rs("wish")%> </td>
+    <td align="center"><%=rs("fromInfo")%> </td>
+    <td align="center"><%=rs("toInfo")%> </td>
     <td align="center"><%=rs("addtime")%></td>
-    <td align="center"><a href="admin_infomodi.asp?id=<%=rs("id")%>">修改</a> <a href="admin_infodel.asp?id=<%=rs("id")%>">删除</a></td>
+    <td align="center"><%=stat %> </td>
+    <td align="center"><a href="admin_orderModi.asp?id=<%=rs("id")%>">点出</a> <a href="admin_orderDel.asp?id=<%=rs("id")%>">删除</a></td>
   </tr>
   <%
 rs.movenext

@@ -1,15 +1,15 @@
-.ctitle{
-			font-size: 25px;
-			text-align: center;
-			margin-top: 10px;
-			margin-bottom: 5px;
-			
-		}
-.c-user{
-	float: right;
-	color: #FF6666
+.breadcrumb{
+	background-color: #fff;
 }
-#main{
-	width: 90%;
+.c_head{
+	text-align: center;
+}
+.c_main{
+	padding: 30px;
+}
+.c_main h4{
+	text-indent: 2em;
+}
+.c_detail{
 	padding: 20px;
 }

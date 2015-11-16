@@ -50,7 +50,7 @@ function CheckForm()
         <label>
         <span>选择文件：</span>
         <input type="file" name="file1" />
-        <b>注：文件大小限制为50M</b> 
+        <b>注：文件大小限制为20M</b> 
          </label>
       <br/>
       <br/>

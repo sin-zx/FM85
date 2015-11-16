@@ -1,4 +1,5 @@
 ﻿<!--#include file="adminconn.inc" -->
+<!--#include file="encrypt.asp" -->
 <%
   if session("aleave")="" then
       response.redirect "adminlogin.asp"
@@ -30,6 +31,7 @@ if request("act")="edit" and request.QueryString("id")<>"" then
 		rs("aleave")=aleave
 		rs("admin")=admin
 		rs("password")=encrypt(password)
+		'rs("password")=password
 		rs.update
 	end if
 	rs.close

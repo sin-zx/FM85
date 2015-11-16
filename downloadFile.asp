@@ -22,7 +22,7 @@ Function downloadFile(strFile)
 ' make sure you are on the latest MDAC version for this to work 
 ' get full path of specified file 
 
-strFilename = server.MapPath("admin/upload/files" & "/" & strFile) 
+strFilename = server.MapPath("programs" & "/" & strFile) 
 
 ' clear the buffer 
 Response.Buffer = True 
@@ -39,7 +39,7 @@ s.Type = 1
 on error resume next 
 
 ' check the file exists 
-Set fso = Server.CreateObject("Scripting.FileSystemObject") 
+Set fso = Server.CreateObject("Scripting.encoderobject") 
 if not fso.FileExists(strFilename) then 
 Response.Write("<h1>Error:</h1>"&strFilename&"does not exists!<p>") 
 Response.End 

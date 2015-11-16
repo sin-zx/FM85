@@ -13,6 +13,8 @@
 </head>
 
 <body >
+  <br>
+  <h3>&nbsp;&nbsp;<a href="admin_upload.asp">添加资讯</a></h3>
 <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td>&nbsp;</td>
