@@ -2,7 +2,33 @@ body{
     font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
+.order_body{    /*点歌页面专有背景*/
+    background: url('../imgs/order_960.png') no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 980px;
+    }
+    .order_body{    /*点歌页面专有背景*/
+        background: url('../imgs/order_960.png') no-repeat;
+        background-size:930px 100%;
+        background-position: center;
+    }
+}
+
+.header{    
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff; /*头部导航的背景色固定为白色*/
+}
+
 
 .icon-bar{      /*改变折叠菜单按钮的颜色*/
     background-color: #6f9c92;
@@ -34,9 +60,9 @@ body{
 
 /*内容容器 圆角边框 单独背景色*/
 .main{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    padding: 35px;
+    padding: 25px;
     background-color: #e7eeed;
     /*border:1px solid #6f9c92;*/
     border-radius:25px; /*圆角*/
@@ -45,7 +71,7 @@ body{
     filter:alpha(Opacity=70);   /*适用老版本浏览器*/
 }
 .main_list{
-    width: 50%;
+    width: 70%;
 }
 .more{
     clear: both;
@@ -115,7 +141,7 @@ body{
 }
 
 .order{
-    min-height:600px; 
+    min-height:500px; 
 }
 .order a{
     display: block;
@@ -158,20 +184,7 @@ footer{
 	line-height: 80px;
     /*min-height: 150px;*/
 }
-.header{	/*头部 渐变色背景*/
-	color: #fff;
-	padding: 10px;
-    width: 100%;
-    /*min-height: 350px;*/
-    /* background: #32d1ac;
-    background: -moz-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #32d1ac), color-stop(100%, #4a90e2));
-    background: -webkit-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
-    background: -o-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
-    background: -ms-linear-gradient(-45deg, #32d1ac 0%, #4a90e2 100%);
-    background: linear-gradient(135deg, #32d1ac 0%, #4a90e2 100%); */
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32d1ac', endColorstr='#4a90e2', GradientType=1);*/
-}
+
 
 #addFail{
     color:#B22222;

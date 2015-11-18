@@ -9,17 +9,9 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script> <!-- 引入表单和ajax相关的js -->
   <title>点歌频道</title>
-<style>
-  body{
-    background: url('imgs/1370.png');
-    background-size:100% 100%;
-  }
-  .header{
-    background-color: #fff;
-  }
-</style>
 </head>
 <body>
+
 <div class="header">  <!--头部（渐变色）-->
   <nav class="navbar">
     <div class="container-fluid">
@@ -46,6 +38,9 @@
   </nav>
 </div>
 
+<div class="container-fluid order_body">
+  <div class="row-fluid">
+
 <div class="intro">
     <h2 class="titleword">we will write something here</h2>
     <h2 class="titleword">we will write something here</h2>
@@ -62,6 +57,9 @@
   <footer>
         <p>©2015 深圳大学广播电台 | by zx</p>
     </footer>
+</div>
+
+  </div>
 </div>
     <script src="js/bootstrap.min.js"></script>
 </body>

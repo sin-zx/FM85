@@ -13,6 +13,57 @@ $(document).ready(function(){
             }
         });
 
+
+        $("#more1").click(function(){
+            var AbsolutePage = Number($("#AbsolutePage1").text());
+            $.ajax
+            ({ 
+                url: "getmore.asp", 
+                dataType: 'html',
+                //传送请求数据
+                type:"post",
+                data: { 
+                    AbsolutePage: AbsolutePage,
+                    listtype:1
+                },
+                success: function(data,status){
+                    if(data==-1)
+                        $("#more1").text("没有更多啦");
+                    else
+                    {
+                        $("#list1").append(data);
+                        $("#AbsolutePage1").text(AbsolutePage+1);
+                    }
+                        
+                }
+            });
+        });
+        
+        $("#more2").click(function(){
+            var AbsolutePage = Number($("#AbsolutePage2").text());
+            $.ajax
+            ({ 
+                url: "getmore.asp", 
+                dataType: 'html',
+                //传送请求数据
+                type:"post",
+                data: { 
+                    AbsolutePage: AbsolutePage,
+                    listtype:2
+                },
+                success: function(data,status){
+                    if(data==-1)
+                        $("#more2").text("没有更多啦");
+                    else
+                    {
+                        $("#list2").append(data);
+                        $("#AbsolutePage2").text(AbsolutePage+1);
+                    }    
+                }
+            });
+        });
+
+
 	/*登陆部分结束*/
 
 /*表单检查*/

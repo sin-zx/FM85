@@ -12,6 +12,9 @@
 	<title>FM850</title>
 </head>
 <body>
+<div class="container-fluid">
+	<div class="row-fluid">
+
 <div class="header">
 	<nav class="navbar">
 	  <div class="container-fluid">
@@ -40,8 +43,6 @@
 	          </ul>
 	        </li>
 			-->
-
-			
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -196,6 +197,9 @@
 <footer>
     <p>©2015 深圳大学广播电台 | by z.x</p>
 </footer>
+
+	</div>
+</div>
 
     <script src="js/bootstrap.min.js"></script>
 </body>
