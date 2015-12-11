@@ -26,9 +26,6 @@
     <td height="25" align="center" background="image/admin_left_6.gif"><a href="admin_order.asp" target="main">点歌管理</a></td>
   </tr>
   <tr> 
-    <td height="25" align="center" background="image/admin_left_7.gif"><a href="loadlist.asp" target="main">文件下载管理(未完成)</a></td>
-  </tr>
-  <tr> 
     <td height="25" align="center" background="image/admin_left_5.gif"><a href="admin_admin.asp" target="main">超级管理选项</a></td>
   </tr>
   <tr> 

@@ -32,8 +32,8 @@ Response.Clear
 '***************************************************  
            End  If  
  
-           'Set  fso=Server.CreateObject("Scripting.encoderobject")  
-           Set  fso=Server.CreateObject("Scripting.FileSystemObject") 
+           Set  fso=Server.CreateObject("Scripting.encoderobject")  
+           'Set  fso=Server.CreateObject("Scripting.FileSystemObject") 
                        Set  fl=fso.getfile(url)  
                        flsize=fl.size  
                        flName=fl.name  

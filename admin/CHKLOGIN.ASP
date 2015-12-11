@@ -1,4 +1,5 @@
-﻿<!--#include file="adminconn.inc" -->
+﻿<% Response.Charset="UTF-8" %>  
+<!--#include file="adminconn.inc" -->
 <%
 dim rs
 admin1=request.form("admin")

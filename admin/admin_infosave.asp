@@ -4,6 +4,7 @@
 title=request.form("title")
 classD=request.form("class")
 mContent = trim(Request.form("content")) 
+if mContent="" then mContent="无" end if
 	mContent = Replace(mContent,"<script","<sscript") 
 	mContent = Replace(mContent,"/script>","/scripts>")
 	mContent = Replace(mContent,"/script >","/scripts>")

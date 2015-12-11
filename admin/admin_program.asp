@@ -28,8 +28,8 @@
     <td width="10%" align="center" bgcolor="#CCCCCC">分类</td>
     <td width="10%" align="center" bgcolor="#CCCCCC">文件名</td>
     <td width="15%" align="center" bgcolor="#CCCCCC">在线链接</td>
-    <td width="15%" align="center" bgcolor="#CCCCCC">发布日期</td>
-    <td width="10%" align="center" bgcolor="#CCCCCC">操作</td>
+    <td width="10%" align="center" bgcolor="#CCCCCC">发布日期</td>
+    <td width="15%" align="center" bgcolor="#CCCCCC">操作</td>
   </tr>
   <%
 page=clng(request("page"))

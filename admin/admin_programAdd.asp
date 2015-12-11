@@ -18,7 +18,7 @@ rs.open sql,conn,1,3
 
 function CheckForm()
 {
-     document.addNEWS.content.value = document.frames.cnEditBox.getHTML(true);     
+     //document.addNEWS.content.value = document.frames.cnEditBox.getHTML(true);     
      //document.addNEWS.imageNum.value = document.frames.cnEditBox.document.all("editImageNum").value;
      //document.addNEWS.editFirstImageName.value = document.frames.cnEditBox.document.all("editFirstImageName").value;
 
@@ -27,7 +27,7 @@ function CheckForm()
 		document.addNEWS.title.focus();
 		return false;
 	}
-		if (document.addNEWS.user.value.length == 0) {
+	if (document.addNEWS.user.value.length == 0) {
 		alert("新闻发布人没有填写");
 		document.addNEWS.user.focus();
 		return false;
@@ -46,15 +46,17 @@ function CheckForm()
 <title>添加新闻</title>
 </head>
 <body leftmargin="0" topmargin="0" bgcolor="#F7F7F7">
-<form name="addNEWS" method="post" action="admin_programSave.asp"  class="basic-grey" onSubmit="return CheckForm();">
+<form name="addNEWS" method="post" action="admin_programSave.asp"  enctype="multipart/form-data"  class="basic-grey" onSubmit="return CheckForm();">
   <label>
   <span>标题：</span>
   <input name="title" type="text" class="input" size="30">
   </label>
+  <!-- 
   <label>
-  <span>文件名（含后缀）：</span>
-  <input name="filename" type="text" class="input" size="30">
+    <span>文件名（含后缀）：</span>
+    <input name="filename" type="text" class="input" size="30">
   </label>
+   -->
   <label>
   <span>在线链接：</span>
   <input name="url" type="text" class="input" size="30">
@@ -73,9 +75,15 @@ function CheckForm()
         <span>&nbsp;</span>
         <span>&nbsp;</span>
         <!--编辑器在这里-->
-        <script id="container" name="content" type="text/plain" style="width:450px;height:230px;"></script>
+        <script id="container" name="content" type="text/plain" style="width:450px;height:230px;"> </script>
       </label>
       <br/><br/>
+      <label>
+        <span>选择文件：</span>
+        <input type="file" name="file1"/>
+        <b>注：文件大小限制为20M</b> 
+      </label>
+      <br>
       <label>
         <span>发布者：</span>
         <input name="user" type="text" value="电台君">

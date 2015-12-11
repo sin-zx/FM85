@@ -77,7 +77,8 @@ set rs=nothing
           <tr bgcolor="#FFFFFF"> 
             <td align="right" height="22">管理密码：</td>
             <td> 
-              <input type="password" name="password"> </td>
+              <input type="password" name="password"> 
+            </td>
           </tr>
           <tr bgcolor="#CCCCCC"> 
             <td colspan="2" align="center"> 

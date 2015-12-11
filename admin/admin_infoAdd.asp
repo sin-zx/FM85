@@ -21,7 +21,7 @@
     
 function CheckForm()
 {
-     document.addNEWS.content.value = document.frames.cnEditBox.getHTML(true);     
+     //document.addNEWS.content.value = document.frames.cnEditBox.getHTML(true);     
      //document.addNEWS.imageNum.value = document.frames.cnEditBox.document.all("editImageNum").value;
      //document.addNEWS.editFirstImageName.value = document.frames.cnEditBox.document.all("editFirstImageName").value;
 
@@ -30,7 +30,7 @@ function CheckForm()
         document.addNEWS.title.focus();
         return false;
     }
-        if (document.addNEWS.user.value.length == 0) {
+    if (document.addNEWS.user.value.length == 0) {
         alert("新闻发布人没有填写");
         document.addNEWS.user.focus();
         return false;

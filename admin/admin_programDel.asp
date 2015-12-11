@@ -1,9 +1,26 @@
 ﻿<% Response.Charset="UTF-8" %>  
 <!--#include file="adminconn.inc"-->
 <%
+
+'查找出文件的存储路径
 set rs=server.CreateObject("ADODB.RecordSet")
-rs.open "delete * from programs where id="&request.QueryString("id"),conn,1
+rs.open "select * from programs where id="&request.QueryString("id"),conn,1,1
+dim filepath
+filepath=rs("filepath")
 set rs=nothing
+
+'删除文件
+Set rsf=server.CreateObject("scripting.FileSystemObject")
+rsf.DeleteFile(filepath)
+Set rsf = nothing
+
+'删除数据库记录'
+set rss=server.CreateObject("ADODB.RecordSet")
+rss.open "delete * from programs where id="&request.QueryString("id"),conn,1
+set rss=nothing
+
+
+
 response.write "<script language='javascript'>" & chr(13)
 		response.write "alert('成功删除！');" & Chr(13)
 		response.write "window.document.location.href='admin_program.asp';"&Chr(13)

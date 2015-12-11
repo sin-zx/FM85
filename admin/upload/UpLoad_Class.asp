@@ -51,8 +51,10 @@ Class AnUpLoad
 	End Property
 	
 	Private Sub Class_Initialize()
-		set Form = server.createobject("Scripting.Dictionary")
-		set Fils = server.createobject("Scripting.Dictionary")
+		set Form = server.createobject("Scripting.EncoderDictionary")
+		set Fils = server.createobject("Scripting.EncoderDictionary")
+		'set Form = server.createobject("Scripting.Dictionary")
+		'set Fils = server.createobject("Scripting.Dictionary")
 		Set StreamT = server.CreateObject("Adodb.stream")
 		vVersion = "AienAspUpload V13.12.09"
 		vMaxSize = -1
@@ -517,7 +519,7 @@ Class UploadFileEx
 	End Function
 	Private Function CreateFolder(ByVal folderPath )
 		Dim oFSO
-		Set oFSO = server.CreateObject("Scripting.encoderobject")
+		Set oFSO = server.CreateObject("Scripting.EncoderObject")
 		Dim sParent 
 		sParent = oFSO.GetParentFolderName(folderPath)
 		If sParent = "" Then Exit Function
@@ -529,7 +531,7 @@ Class UploadFileEx
 	Private Function GetFilePath() 
 		Dim oFSO, Fname , FNameL , i 
 		i = 0
-		Set oFSO = server.CreateObject("Scripting.encoderobject")
+		Set oFSO = server.CreateObject("Scripting.EncoderObject")
 		Fname = mvarPath & mvarFileName
 		FNameL = Mid(mvarFileName, 1, InStr(mvarFileName, ".") - 1)
 		Do While oFSO.FileExists(Fname)
