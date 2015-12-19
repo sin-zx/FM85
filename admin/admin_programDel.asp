@@ -10,10 +10,11 @@ filepath=rs("filepath")
 set rs=nothing
 
 '删除文件
+if filepath<>"empty" then
 Set rsf=server.CreateObject("scripting.FileSystemObject")
 rsf.DeleteFile(filepath)
 Set rsf = nothing
-
+end if 
 '删除数据库记录'
 set rss=server.CreateObject("ADODB.RecordSet")
 rss.open "delete * from programs where id="&request.QueryString("id"),conn,1

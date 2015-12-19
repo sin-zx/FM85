@@ -57,7 +57,7 @@ for j=1 to rs.PageSize
     <td align="center"><%=rs("filename")%> </td>
     <td align="center"> <a href=<%=rs("url")%>><%=rs("url")%></a>  </td>
     <td align="center"><%=rs("addtime")%></td>
-    <td align="center"><a href="admin_programModi.asp?id=<%=rs("id")%>">修改</a> <a href="admin_programDel.asp?id=<%=rs("id")%>">删除</a></td>
+    <td align="center"> <a href="admin_programDel.asp?id=<%=rs("id")%>">删除</a></td>
   </tr>
   <%
 rs.movenext
@@ -65,7 +65,7 @@ if rs.eof then exit for
 next                                                       
 %>
 </table>
-  
+
 <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td>&nbsp;</td>

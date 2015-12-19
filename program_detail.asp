@@ -36,7 +36,9 @@ end if
 				classD=2
 			End If
 		%>
+		<% if rs("filename")<>"empty" then %>
 		<h4>下载文件：<a href='down.asp?filename=<% =rs("filename") %>&class=<% =classD %>'><% =rs("localname") %></a></h4>
+		<% end if %>
 		<h4>在线收听/观看地址:<a href='<% =rs("url") %>' target="_blank">点我</a></h4>
 		<br>
 		<h4>简介：</h4>

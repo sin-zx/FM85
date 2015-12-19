@@ -60,9 +60,9 @@ body{
 
 /*内容容器 圆角边框 单独背景色*/
 .main{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px;
     background-color: #e7eeed;
     /*border:1px solid #6f9c92;*/
     border-radius:25px; /*圆角*/
@@ -100,14 +100,14 @@ body{
 /*end*/
 
 /*图片轮播*/
-.carousel{
-    min-height:330px; 
-    text-align: center;
-
+.carousel img{
+    display: block;
+    margin: 0 auto;
 }
 .carousel .item{
-    height: 330px !important;
+    height: 630px !important;
     margin: 0 auto;
+    text-align: center;
 
 }
 .line{
@@ -126,8 +126,9 @@ body{
 } 
 
 /*人物名片*/
-.memberCard{
+.memberCard .thumbnail{
     text-align: center;
+    min-height: 620px;
 }
 .memberCard p{
     font-weight: bold;
@@ -179,7 +180,7 @@ footer{
     color: #6f9c92;
 }
 .intro{
-	margin: 40px 0;
+	
 	text-align: center;
 	line-height: 80px;
     /*min-height: 150px;*/

@@ -26,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="">FM85.0</a>
+        <!-- <a class="navbar-brand" href="">FM85.0</a> -->
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -45,12 +45,16 @@
   <div class="row-fluid">
       <div class="intro">
           <br><br>
-          <h2 class="titleword">we will write something here</h2>
-          <h2 class="titleword">we will write something here</h2>
-          <h2 class="titleword">we will write something here</h2>
-          <h2 class="titleword">we will write something here</h2>
-          <h2 class="titleword">we will write something here</h2>
-          <h2 class="titleword">we will write something here</h2>
+          <h2 class="titleword">世界上有许多花</h2>
+          <h2 class="titleword">只要你说话就会聆听</h2>
+          <h2 class="titleword">世界上有许多树</h2>
+          <h2 class="titleword">只要你说话就会给自己听</h2>
+          <h2 class="titleword">当一个发现的午后</h2>
+          <h2 class="titleword">是滴是滴</h2>
+          <h2 class="titleword">别让蜘蛛网在墙角张扬</h2>
+          <h2 class="titleword">也别让手机冷在一旁</h2>
+          <h2 class="titleword">让这份祝福穿过世界的中心</h2>
+          <h2 class="titleword">送给你最牵挂的那个人</h2>
       </div>
       <div class="order">
         <a data-toggle="modal" data-target="#orderModal" class="btn btn-lg btn-default">点歌</a>

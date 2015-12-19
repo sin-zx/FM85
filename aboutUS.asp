@@ -23,67 +23,79 @@
         
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p1.jpg" alt="...">
+            <img src="imgs/members/易韵琴.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>易韵琴</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>播音部</h4>
+              <p>
+                Mother moonlight fill my scared eyes,light up my way with your brightest ray.时而冷漠时而热情是我最真实的灵魂。
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p2.jpg" alt="...">
+            <img src="imgs/members/陈奕涛.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>陈奕涛</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>技术部</h4>
+              <p>
+                爱玩，爱听电台
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p3.jpg" alt="...">
+            <img src="imgs/members/高盈凤.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>高盈凤</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>播音部</h4>
+              <p>
+                天道酬勤
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p4.jpg" alt="...">
+            <img src="imgs/members/王婷.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>王婷</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>播音部</h4>
+              <p>
+                一个身材娇小确有大能量的姑娘。down to earth，never  say never
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p5.jpg" alt="...">
+            <img src="imgs/members/章艺瑶.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>章艺瑶</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>技术部</h4>
+              <p>
+                你把我吓得虎躯一震
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="imgs/p6.jpg" alt="...">
+            <img src="imgs/members/林森.jpg" alt="...">
             <div class="caption">
-              <h3>小明</h3>
+              <h3>林森</h3>
               <div class="divider"></div>
-              <h4>推广部部长</h4>
-              <p>这是一段介绍这是一段介绍这真的只是一段介绍</p>
+              <h4>播音部</h4>
+              <p>
+                Who Dares Wins
+              </p>
             </div>
           </div>
         </div>
@@ -107,8 +119,12 @@
         <h4 class="modal-title" id="myModalLabel2">联系我们</h4>
       </div>
       <div class="modal-body">
-    <h1>联系方式</h1>
-
+        <h4>微博：@深大广播电台</h4>
+        <h4>微信公众平台：szufm850</h4>
+        <h4>荔枝FM：深大电台FM850</h4>
+        <h4>喜马拉雅FM：深圳大学广播电台</h4>
+        <h4>办公地址：脚踏实地办公楼625</h4>
+        <h4>联系电话：0755-26536600</h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

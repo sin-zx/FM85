@@ -51,10 +51,10 @@ Class AnUpLoad
 	End Property
 	
 	Private Sub Class_Initialize()
-		set Form = server.createobject("Scripting.EncoderDictionary")
-		set Fils = server.createobject("Scripting.EncoderDictionary")
-		'set Form = server.createobject("Scripting.Dictionary")
-		'set Fils = server.createobject("Scripting.Dictionary")
+		'set Form = server.createobject("Scripting.EncoderDictionary")
+		'set Fils = server.createobject("Scripting.EncoderDictionary")
+		set Form = server.createobject("Scripting.Dictionary")
+		set Fils = server.createobject("Scripting.Dictionary")
 		Set StreamT = server.CreateObject("Adodb.stream")
 		vVersion = "AienAspUpload V13.12.09"
 		vMaxSize = -1

@@ -109,13 +109,13 @@
 				<a href="showlist.asp" class="more">往期节目</a>  
 				<div class="clear"></div>
 			</div>	
-
+			<!--
 			<h2 class='sub_title'>点点传情</h2>
 			<hr>
 			<div class="main">
 				
 			</div>
-
+			-->
 		</div>
 
 			<div class="col-md-5">
